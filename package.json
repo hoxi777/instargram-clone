@@ -1,0 +1,26 @@
+{
+  "name": "instargram-clone",
+  "version": "1.0.0",
+  "repository": "https://github.com/hoxi777/instargram-clone.git",
+  "author": "hoxi777 <jtho1015@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "7.4.3",
+    "dotenv": "^7.0.0",
+    "graphql-tools": "^4.0.4",
+    "graphql-yoga": "^1.17.4",
+    "merge-graphql-schemas": "^1.5.8",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js",
+    "generate" : "prisma generate",
+    "prisma" :  "yarn deploy && yarn run generate",
+    "deploy": "prisma deploy"
+  }
+}
