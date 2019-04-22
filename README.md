@@ -4,7 +4,9 @@ instargram clone with React + prisma + express and React-Native
 
 ## User Stroies
 
-- [x] login in
+- [x] Create account
+- [ ] Request Secret
+- [ ] Confirm Secret (Login)
 - [ ] See the feed
 - [ ] Like / Unlike a photo
 - [ ] Comment on a photo
@@ -14,6 +16,5 @@ instargram clone with React + prisma + express and React-Native
 - [ ] See User profile
 - [ ] See the full photo
 - [ ] Edit my profile
-- [ ] Create account
 - [ ] Upload a photo
 - [ ] Edit photos (Delete)
