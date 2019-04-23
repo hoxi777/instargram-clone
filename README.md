@@ -5,8 +5,8 @@ instargram clone with React + prisma + express and React-Native
 ## User Stroies
 
 - [x] Create account
-- [ ] Request Secret
-- [ ] Confirm Secret (Login)
+- [x] Request Secret
+- [x] Confirm Secret (Login)
 - [ ] See the feed
 - [ ] Like / Unlike a photo
 - [ ] Comment on a photo

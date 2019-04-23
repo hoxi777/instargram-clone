@@ -9,9 +9,6 @@ import {sendSecretMail} from "./utills"
 import { FieldConfigUtils } from "prisma-generate-schema/dist/src/generator/generator";
 const PORT = process.env.PORT || 4000;
 
-sendSecretMail("xogus1015@naver.com")
-
-
 const server = new GraphQLServer({ schema });
 
 server.express.use(logger("dev"));

@@ -6,27 +6,24 @@ export const generateSecret = () => {
     const randomNumber = Math.floor(Math.random() * adjectives.length);
     return `${adjectives[randomNumber]} ${nouns[randomNumber]}`;
   };
-
-
-export const sendmail = (email) => {
+  
+  const sendMail = email => {
     const options = {
-        auth: {
-            api_user: process.env.SENDGRID_USERNAME,
-            api_key: process.env.SENGRID_PASSWORD
-          }        
-    }
-
+      auth: {
+        api_user: process.env.SENDGRID_USERNAME,
+        api_key: process.env.SENGRID_PASSWORD
+      }
+    };
     const client = nodemailer.createTransport(sgTransport(options));
     return client.sendMail(email);
-};
-
-export const sendSecretMail = (adress, secret) => {
+  };
+  
+  export const sendSecretMail = (adress, secret) => {
     const email = {
-        from: "xogus1015@prismagram.com",
-        to: email,
-        subject: "Login Secret for Instargram",
-        HTML: `Hello! Your Login secret it ${secret}. <br/> Copy paste on the app/website to log in`
-    }
-
-    return sendmail(email);
-}
+      from: "nico@prismagram.com",
+      to: adress,
+      subject: "🔒Login Secret for Prismagram🔒",
+      html: `Hello! Your login secret is <strong>${secret}</strong>.<br/>Copy paste on the app/website to log in`
+    };
+    return sendMail(email);
+  };
