@@ -14,7 +14,6 @@ instargram clone with React + prisma + express and React-Native
 - [x] Follow User
 - [x] Unfollow User
 - [ ] See the feed
-- [ ] following
 - [ ] See User profile
 - [ ] See the full photo
 - [ ] Edit my profile
