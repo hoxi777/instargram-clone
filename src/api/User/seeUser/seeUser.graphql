@@ -1,0 +1,4 @@
+    
+type Query {
+  seeUser(username: String!): User!
+}
