@@ -15,11 +15,12 @@ instargram clone with React + prisma + express and React-Native
 - [x] Unfollow User
 - [x] Edit my profile
 - [x] Edit photos (Delete)
-- [ ] Upload a photo
-- [ ] See my profile
-- [ ] See the feed
-- [ ] See User profile
-- [ ] See the full photo
-- [ ] See Room
-- [ ] Send private DM
-- [ ] Receive DM
+- [x] Upload a photo
+- [x] See User profile
+- [x] See my profile
+- [x] See the full photo
+- [x] See the feed
+- [x] See Room
+- [x] See Rooms
+- [x] Send private DM
+- [x] Receive DM
